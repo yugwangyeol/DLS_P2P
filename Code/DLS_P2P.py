@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 from PIL import Image
 
-def IDEA(original,distored,th=100):
+def DLS(original,distored,th=100):
 
     original = original.resize(original.size)
     distored = distored.resize(original.size)
@@ -47,8 +47,8 @@ def P2P(original,distored):
 if __name__ == "__main__":
     original = Image.open('origin/000000_0_0_0_0_0.jpg')
     distored = Image.open('Distortion/2.Shoulder_50_down/000000_0_-50_0_0_0.jpg')
-    IDEA_score = IDEA(original,distored)
-    print('IDEA Score : %s'%IDEA_score)
+    IDEA_score = DLS(original,distored)
+    print('DLS Score : %s'%IDEA_score)
 
     origin = cv2.imread('origin/000000_0_0_0_0_0.jpg')
     distored = cv2.imread('Distortion/2.Shoulder_50_down/000000_0_-50_0_0_0.jpg')
