@@ -18,7 +18,7 @@
 ## Method
 
 ### DISTORTED LINE SIMILARITY (DLS)
-![Fig. 3](https://prod-files-secure.s3.us-west-2.amazonaws.com/82f57d35-a43e-488a-8891-7f925dbaf5e2/7403a5cd-775b-41c0-bb70-af51dfa25162/image.png)
+![Image](https://github.com/user-attachments/assets/913051f3-ea35-4474-bb2f-d27a9108f214)
 
 * 동작 과정:
   1. Edge Detection을 통한 직선 정보 추출
@@ -27,7 +27,8 @@
   4. 전체 대비 왜곡 픽셀 비율 계산
 
 ### POINT TO POINT (P2P)
-![Fig. 4](https://prod-files-secure.s3.us-west-2.amazonaws.com/82f57d35-a43e-488a-8891-7f925dbaf5e2/404feecd-b0cb-4643-9d96-5c7380ae9de0/image.png)
+![Image](https://github.com/user-attachments/assets/a0172144-ccaa-44c6-901d-1756dd0995dd)
+
 
 * 동작 과정:
   1. Motion Tracking으로 코너 검출
@@ -77,7 +78,7 @@ ssim_score = SSIM(original, distorted)
 * MD 이미지를 통한 평가 지표의 신뢰성 검증
 
 ### COCO-based Dataset
-![Dataset Generation](https://prod-files-secure.s3.us-west-2.amazonaws.com/82f57d35-a43e-488a-8891-7f925dbaf5e2/249c215b-e86f-41c1-846c-a81ccc08f9a5/image.png)
+![Image](https://github.com/user-attachments/assets/c14d06a5-642b-4593-9ca2-54bcf7cc1f01)
 
 * COCO 2017 데이터셋 기반
 * 다양한 신체 부위 (얼굴, 어깨, 엉덩이, 다리, 전신)
