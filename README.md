@@ -16,9 +16,10 @@
   * 왜곡 평가 법안을 뒷받침할 기술적 근거 필요
 
 ## Method
-
 ### DISTORTED LINE SIMILARITY (DLS)
-![Image](https://github.com/user-attachments/assets/913051f3-ea35-4474-bb2f-d27a9108f214)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/913051f3-ea35-4474-bb2f-d27a9108f214" alt="DLS Process">
+</div>
 
 * 동작 과정:
   1. Edge Detection을 통한 직선 정보 추출
@@ -27,8 +28,9 @@
   4. 전체 대비 왜곡 픽셀 비율 계산
 
 ### POINT TO POINT (P2P)
-![Image](https://github.com/user-attachments/assets/a0172144-ccaa-44c6-901d-1756dd0995dd)
-
+<div align="center">
+<img src="https://github.com/user-attachments/assets/a0172144-ccaa-44c6-901d-1756dd0995dd" alt="P2P Process">
+</div>
 
 * 동작 과정:
   1. Motion Tracking으로 코너 검출
@@ -44,7 +46,6 @@
 ```
 
 ## Usage
-
 ### IDEA & P2P Score 계산
 ```python
 from IDEA import IDEA, P2P
@@ -71,14 +72,15 @@ ssim_score = SSIM(original, distorted)
 ```
 
 ## Experimental Results
-
 ### 평가 지표 성능 비교
 * DLS와 P2P는 기존 SSIM, PSNR 대비 80% 더 효과적한 왜곡 감지
 * 신체 부위별, 왜곡 강도별 평가에서 우수한 성능 입증
 * MD 이미지를 통한 평가 지표의 신뢰성 검증
 
 ### COCO-based Dataset
-![Image](https://github.com/user-attachments/assets/c14d06a5-642b-4593-9ca2-54bcf7cc1f01)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/c14d06a5-642b-4593-9ca2-54bcf7cc1f01" alt="Dataset Generation Process">
+</div>
 
 * COCO 2017 데이터셋 기반
 * 다양한 신체 부위 (얼굴, 어깨, 엉덩이, 다리, 전신)
